@@ -1,3 +1,119 @@
-h1{
-    color:rgb(206, 192, 255);
-}
+body{ background-image:url('https://i.pinimg.com/originals/4f/c7/95/4fc79540fa40a155c4ec3a4969d110c4.gif');}
+.padding{padding: 5% 5% 5% 5%;}
+
+.spacing{padding: 5px}
+
+.body_text{
+    font-family: Epilogue, sans-serif;}
+
+.homelink{text-align: center; font-family: Epilogue, sans-serif; font-size:20px; 
+    padding-left: 250px; padding-right: 250px; font-weight: 700; padding-bottom: 500px;}
+
+.names{font-size: 16px; font-style: italic;
+    color: #0e2112;}
+
+ul{margin: auto;
+    width: 640px; 
+    padding: 50px;
+    font-family: Epilogue, sans-serif; 
+    color: #23272b;}
+
+    .demo li {padding-bottom: 12px;}
+
+    .title_padding{font-weight: bold; display: block; padding-bottom: 7px;}
+
+    .bolded {font-weight: bold;}
+
+    .nobullet{list-style: none;}
+
+    .plant_title {font-family: Epilogue, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #224229;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 3%;}
+
+    h1{font-family: Epilogue, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #224229;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0%;}
+
+    h2 {font-family: Epilogue, sans-serif;
+        font-size: 32px;
+        font-style:italic;
+        font-weight: 500;
+        line-height: 1.3;
+        color: #224229;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0%;}
+
+    .headtitle{
+        font-size: 20px;
+        color: #224229;}
+
+    .menu_style {font-family: Epilogue, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #543211;
+        text-align: left;
+        padding-bottom: 5px;
+        margin-top: 0;}
+
+    .center {text-align: center;
+    padding-top: 3%;}
+
+    .newcenter{text-align: center;}
+
+    .leftalign{text-align: left;}
+
+    th, td {padding: 15px;}
+
+    .flex-table {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px; /* Adjust this value as needed */
+    }
+    
+    .flex-table thead {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Ensure the header row spans the full width */
+    }
+    
+    .flex-table th,
+    .flex-table td {
+        flex: 0 0 auto; /* Center align content in each cell */
+    }
+    
+    .flex-table th:nth-child(1),
+    .flex-table td:nth-child(1) {
+        width: 30%; /* Adjust the width of the first column */
+    }
+    
+    .flex-table th:nth-child(2),
+    .flex-table td:nth-child(2) {
+        width: 20%; /* Adjust the width of the second column */
+    }
+    
+    .flex-table th:nth-child(3),
+    .flex-table td:nth-child(3) {
+        width: 40%; /* Adjust the width of the third column */
+    }
+    
+    .flex-table th:nth-child(4),
+    .flex-table td:nth-child(4) {
+        width: 10%; /* Adjust the width of the fourth column */
+    }
+
+    .firstcol{padding-left: 170px;}
+    .seccol{padding-left: 270px;}
+    .third{padding-left: 300px;}
+

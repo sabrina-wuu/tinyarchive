@@ -56,20 +56,26 @@ class Photograph(ArchiveDocument):
 
 
 class Artifact(ArchiveDocument):
-    MAT_OTHER = 'other'
-    MAT_PLASTIC = 'plastic'
-    MAT_CERAMIC = 'ceramic'
-    MAT_GLASS = 'glass'
-    MAT_METAL = 'metal'
+    LEV_EASY = 'Easy'
+    LEV_MODERATE = 'Moderate'
+    LEV_EXPERIENCED = 'Experienced'
+    LEV_DIFFICULT = 'Difficult'
+    LEV_EXPERT = 'Expert'
 
-    MATERIAL_CHOICES = [(MAT_OTHER, "Other"),
-                        (MAT_PLASTIC, "Plastic"),
-                        (MAT_CERAMIC, "Ceramic"),
-                        (MAT_GLASS, "Glass"),
-                        (MAT_METAL,"Metal")]
-    material = models.CharField(
-        max_length=50, choices=MATERIAL_CHOICES, default=MAT_GLASS)
+
+    LEVEL_CHOICES = [(LEV_EASY, "Easy"),
+                        (LEV_MODERATE, "Moderate"),
+                        (LEV_EXPERIENCED, "Experienced"),
+                        (LEV_DIFFICULT, "Difficult"),
+                        (LEV_EXPERT,"Expert")]
+    level = models.CharField(
+        max_length=50, choices=LEVEL_CHOICES, default=LEV_EASY)
     model3d = models.URLField(max_length=500, blank="True")
+    country_of_origin = models.TextField(max_length=500, blank = "True")
+    physical_description = models.TextField(max_length=10000, blank = "True")
+    growth_habits = models.TextField(max_length=10000, blank = "True")
+    care_requirements = models.TextField(max_length=10000, blank = "True")
+    additional_facts = models.TextField(max_length=10000, blank = "True")
 
 
 class Document(ArchiveDocument):
